@@ -9,10 +9,26 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    <div class="headerBanner"></div>
+    <div class="headerBanner">What do I have <span class="todoTitle">TODO</span>?</div>
     <div class="container">
-        <div class="projectContainer"></div>
-        <div class="taskContainer"></div>
+        <div class="projectContainer">
+            <div class="projectHeader">Projects:</div>
+            <ul class="projectList">
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+            <input type="text" class="newProject" placeholder="New Project...">
+        </div>
+        <div class="taskContainer">
+            <div class="taskHeader">Tasks:</div>
+            <ul class="taskList">
+                <li>Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+            </ul>
+            <input type="text" class="newTask" placeholder="New Task...">
+        </div>
     </div>
 </body>
 </html>
