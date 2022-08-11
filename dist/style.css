@@ -1,9 +1,14 @@
+:root{
+    --purple:rgb(89, 71, 106);
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
+    color:aliceblue;
+    font-family: monospace;
     background-color: rgb(24, 14, 32);
     display: flex;
     flex-direction: column;
@@ -14,18 +19,60 @@ body{
     height: calc(94vh - 100px);
     display: flex;
 }
-.projectContainer{
-    height: 100%;
-    width: max(200px,30vw);
-    background:rebeccapurple;
-}
-.taskContainer{
-    margin-left: 16px;
-    width: 70%;
-    background: red;
-}
+
 .headerBanner{
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     height: 100px;
     width: 100%;
-    background: blue;
+}
+.headerBanner .todoTitle{
+    color:goldenrod;
+    margin-left: 10px;
+}
+
+
+.projectContainer{
+    background-color: rgb(42, 33, 50);
+    height: 100%;
+    border: 2px solid var(--purple);
+    width: max(200px,30vw);
+}
+.taskContainer{
+    background-color: rgb(42, 33, 50);
+    margin-left: 16px;
+    width: 70%;
+    border: 2px solid var(--purple);
+}
+.taskHeader, .projectHeader{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    height: 80px;
+    background-color: var(--purple);
+}
+ul{width:100%;}
+ul{overflow:hidden; overflow-y:scroll;}
+li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin:5px;
+}
+input{
+    color: white;
+    border: none;
+    padding: 0 8px;
+    height: 36px;
+    width: 95%;
+    margin-left: 8px;
+    background-color: var(--purple);
 }
