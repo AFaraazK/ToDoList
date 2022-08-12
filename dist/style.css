@@ -57,6 +57,13 @@ body{
     height: 80px;
     background-color: var(--purple);
 }
+.projectContainer .projectHeader .deleteProject{
+    margin-left: 10px;
+    font-size: 24px;
+}
+.projectContainer .projectHeader .deleteProject:hover{
+    cursor: pointer;
+}
 ul{width:100%;}
 ul{overflow:hidden; overflow-y:scroll;}
 li{
