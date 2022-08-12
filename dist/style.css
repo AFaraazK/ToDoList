@@ -63,6 +63,7 @@ body{
 }
 .projectContainer .projectHeader .deleteProject:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
 ul{width:100%;}
 ul{overflow:hidden; overflow-y:scroll;}
@@ -73,6 +74,10 @@ li{
     border-bottom: 1px solid black;
     width: 100%;
     margin:5px;
+}
+li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 input{
     color: white;
