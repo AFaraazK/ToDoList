@@ -1,5 +1,3 @@
-import {consolePrint} from "./factories"
-
 const projectList = document.querySelector(".projectList");
 const taskList = document.querySelector(".taskList");
 const newProjectInput = document.querySelector(".newProject");
