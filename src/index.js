@@ -5,7 +5,10 @@ let projects = [];
 let activeProject;
 
 function Project(name,id,tasks){
-    return {name: name,id: id,tasks: []};
+    function newTask(task){
+        tasks.push(task);
+    }
+    return {name: name,id: id,tasks,newTask};
 }
 
 function displayProjects(){
@@ -53,3 +56,7 @@ projectList.addEventListener('click', e => {
 let ProjOne = new Project("Example Project",Date.now().toString(),[]);
 projects.push(ProjOne);
 displayProjects();
+
+ProjOne.newTask("Get Groceries");
+ProjOne.newTask("Wash the dishes");
+console.log(ProjOne.tasks);
