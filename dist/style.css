@@ -1,11 +1,13 @@
 :root{
-    --purple:rgb(89, 71, 106);
+    --purple:rgb(122, 56, 67);
+    /* --purple:rgb(89, 71, 106); */
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body{
     color:aliceblue;
     font-family: monospace;
@@ -19,7 +21,11 @@ body{
     height: calc(94vh - 100px);
     display: flex;
 }
-
+.credit{
+    position: absolute;
+    right:1%;
+    color:var(--purple);
+}
 .headerBanner{
     font-size: 3rem;
     font-weight: bold;
@@ -41,12 +47,21 @@ body{
     height: 100%;
     border: 2px solid var(--purple);
     width: max(200px,30vw);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
 }
 .taskContainer{
     background-color: rgb(42, 33, 50);
     margin-left: 16px;
     width: 70%;
     border: 2px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.taskContainer .newTask{
+    justify-self: flex-end;
 }
 .taskHeader, .projectHeader{
     display: flex;
@@ -55,6 +70,7 @@ body{
     font-size: 2rem;
     text-align: center;
     height: 80px;
+    min-height: 80px;
     background-color: var(--purple);
     margin-bottom: 8px;
 }
@@ -91,7 +107,10 @@ input{
     width: 95%;
     margin-left: 8px;
     background-color: var(--purple);
+    min-height: 36px;
 }
 .completed{
     text-decoration: line-through;
 }
+
+
