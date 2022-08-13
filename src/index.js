@@ -63,8 +63,6 @@ function displayTasks(){
     }
 
     if(activeProject != null){
-    //find activeProject object
-    let activeProjectObj = projects.find(project => project.id == activeProject);
     // loop through activeProject tasks array and create a list item
     (projects.find(project => project.id == activeProject)).tasks.forEach(task => {
         let taskEl = document.createElement("li");
@@ -121,7 +119,7 @@ projectList.addEventListener('click', e => {
     }
 })
 
-deleteButton.addEventListener('click', e => {
+deleteButton.addEventListener('click', () => {
     projects = projects.filter(project => project.id != activeProject);
     activeProject = null;
     displayProjects();
