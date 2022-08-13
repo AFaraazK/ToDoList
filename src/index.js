@@ -1,3 +1,5 @@
+import {consolePrint} from "./factories"
+
 const projectList = document.querySelector(".projectList");
 const taskList = document.querySelector(".taskList");
 const newProjectInput = document.querySelector(".newProject");
@@ -7,9 +9,7 @@ const deleteButton = document.querySelector(".deleteProject");
 let projects = [];
 let activeProject;
 
-// TODO: Click to cross tasks off
-//       Double Click to Delete Task
-//       Modal explaining this.
+// TODO: Modal explaining this.
 // TODO: Make tasks objects with additional info
 // TODO: Local Storage
 // TODO: Divide file into multipe module files
@@ -134,5 +134,5 @@ let ProjOne = new Project("Example Project",Date.now().toString(),[]);
 projects.push(ProjOne);
 displayProjects();
 
-ProjOne.newTask("Get Groceries",Date.now().toString(),false);
-ProjOne.newTask("Wash the dishes",(Date.now().toString())+"12",false);
+ProjOne.newTask("Wash the Groceries",Date.now().toString(),false);
+ProjOne.newTask("Get the dishes",(Date.now().toString())+"12",false);
