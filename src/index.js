@@ -45,7 +45,7 @@ function displayProjects(){
             projEl.style.backgroundColor = "var(--purple)";
         }
         projectList.appendChild(projEl);
-    })
+    });
 
     // set taskHeader to name of active Project
     if(activeProject != null){
@@ -93,7 +93,7 @@ function displayTasks(){
 }
 
 newProjectInput.addEventListener('keypress', e => {
-    if(e.key == "Enter"){
+    if(e.key == "Enter" && newProjectInput.value != null){
         //alert(newProjectInput.value);
         let proj = new Project(newProjectInput.value,Date.now().toString(),[]);
         projects.push(proj);
