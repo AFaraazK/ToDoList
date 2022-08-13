@@ -89,3 +89,6 @@ input{
     margin-left: 8px;
     background-color: var(--purple);
 }
+.completed{
+    text-decoration: line-through;
+}
